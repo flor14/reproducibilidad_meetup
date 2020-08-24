@@ -1,18 +1,11 @@
-# 19 de febrero de 2018
-str_join("Letter: ", letters)
-
+library(dplyr)
+library(kableExtra)
+library(knitr)
 library(tibble)
 library(stringr)
 
 
-notas <- tibble(nombre = c("Ana", "Juan", "Pedro", "Esteban", "Alicia", "Sofia", "Eva"),
-       apellido = c("Lopez", "Martinez", "Gomez", "Juarez", "Sosa", "Jara", "Dominguez"),
-       nota_final = c(10, 3, 7, 8, 9, 7, 7))
-write.csv(notas, "notas_mat_2015.csv")
-
 notas <- read.csv("notas_mat_2015.csv")
-
-library(kableExtra)
 
 tabla <- notas %>% mutate(nombre_completo = str_c(nombre," ", apellido),
                  nombre_abr = abbreviate(nombre_completo),
