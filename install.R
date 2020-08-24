@@ -3,4 +3,4 @@ install.packages("stringr")
 install.packages("dplyr")
 install.packages("kableExtra")
 install.packages("knitr")
-
+install.packages("rlang")
