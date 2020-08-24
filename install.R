@@ -1,6 +1,5 @@
-install.packages("tibble")
 install.packages("stringr")
-install.packages("dplyr")
+install.packages("tidyverse")
 install.packages("kableExtra")
 install.packages("knitr")
-install.packages("rlang")
+
