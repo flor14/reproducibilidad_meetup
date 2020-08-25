@@ -1,9 +1,9 @@
 library(tidyr)
 library(ggplot2)
 
-coffe_rantings <- read.csv("C:/User/Florencia/codigo/coffee_ratings.csv")
+coffe_data <- read.csv("C:/User/Florencia/codigo/coffee_data.csv")
 
-coffee_ratings %>%
+coffee_data %>%
   pivot_longer(cols=aroma:moisture,
                names_to="caracteristicas_cafe",
                values_to="value") %>%
