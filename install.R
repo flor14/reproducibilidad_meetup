@@ -1,5 +1,2 @@
-install.packages("stringr")
-install.packages("tidyverse")
-install.packages("kableExtra")
-install.packages("knitr")
-
+install.packages("ggplot2")
+install.packages("tidyr")
